@@ -3,8 +3,8 @@ class ProductsController < ApplicationController
   end
 
   def add
-    cart << product_params
-    redirect_to :products
+    cart << params[:product]
+    render :index
   end
   
   private
