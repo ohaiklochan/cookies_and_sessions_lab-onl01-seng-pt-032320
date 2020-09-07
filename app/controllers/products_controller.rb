@@ -4,5 +4,12 @@ class ProductsController < ApplicationController
   end
 
   def add
+    cart << 
+  end
+  
+  private
+
+  def product_params
+    params.require(:product)
   end
 end
