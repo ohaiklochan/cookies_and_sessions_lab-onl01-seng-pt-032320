@@ -4,7 +4,8 @@ class ProductsController < ApplicationController
   end
 
   def add
-    cart << 
+    cart << product_params
+    redirect_to :products
   end
   
   private
